@@ -1,0 +1,19 @@
+module.exports = {
+  siteMetadata: {
+    title: 'Comic Blog',
+  },
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src`,
+      },
+    },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.app/offline
+    // 'gatsby-plugin-offline',
+  ],
+}
